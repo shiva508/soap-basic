@@ -1,13 +1,14 @@
 package com.infinity.richerdatatype;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class TeamsUtility {
-private Map<String, Team> teamMap;
+public class TeamsUtility implements Serializable{
+public  Map<String, Team> teamMap;
 public TeamsUtility(){
 	teamMap=new HashMap<String, Team>();
 }

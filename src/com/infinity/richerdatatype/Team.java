@@ -1,12 +1,12 @@
 package com.infinity.richerdatatype;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Team {
+public class Team  implements Serializable{
 	private List<Player> players;
 	private String name;
 	public Team(List<Player> players, String name) {
-		super();
 		this.players = players;
 		this.name = name;
 	}
@@ -28,9 +28,4 @@ public class Team {
 	public int getRosterCount() {
 		return (players==null) ? 0:players.size();
 	}
-	@Override
-	public String toString() {
-		return "Team [players=" + players + ", name=" + name + "]";
-	}
-
 }

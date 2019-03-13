@@ -1,6 +1,8 @@
 package com.infinity.richerdatatype;
 
-public class Player {
+import java.io.Serializable;
+
+public class Player implements Serializable{
 private String name;
 private String nikename;
 public Player(String name, String nikename) {
@@ -19,10 +21,6 @@ public String getNikename() {
 }
 public void setNikename(String nikename) {
 	this.nikename = nikename;
-}
-@Override
-public String toString() {
-	return "Player [name=" + name + ", nikename=" + nikename + "]";
 }
 
 }
